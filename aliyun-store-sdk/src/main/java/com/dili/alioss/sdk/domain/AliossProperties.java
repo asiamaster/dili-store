@@ -12,19 +12,19 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix="alioss", ignoreInvalidFields=true)
 public class AliossProperties {
 
-	@Value("${endpoint:http://oss-cn-chengdu.aliyuncs.com}")
+	@Value("${endpoint:}")
 	private String endpoint;
 
-	@Value("${accessKeyId:LTAI4GHkJPZuuS7vK2UTwiHc}")
+	@Value("${accessKeyId:}")
 	private String accessKeyId;
 
-	@Value("${accessKeySecret:IQ4V3aMySyUEXnqH0oUIi16X5PlmGi}")
+	@Value("${accessKeySecret:}")
 	private String accessKeySecret;
 
-	@Value("${host:https://asiamaster.oss-cn-chengdu.aliyuncs.com/}")
+	@Value("${host:}")
 	private String host;
 
-	@Value("${bucketName:asiamaster}")
+	@Value("${bucketName:}")
 	private String bucketName;
 
 	public String getEndpoint() {
